@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --accent-gray:hsla(0, 0%, 15%, 0.950);
+}
+
+.row{
+    display: flex;
+}
+.col {
+    width: 100%;
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--dark-gray);
+}
+
+.main {
+    background-image: url(../images/bg-pattern-top.svg);
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: 26px;
+    //border: solid var(--very-dark-desaturated-blue) 1px;
+    width: 348px;
+    height: 378px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    &__body{
+        height: 100%;
+        // display: flex;
+    }
+    &__top{
+        height: 140px;
+        background-image: url(../images/bg-pattern-card.svg);
+    }
+    &__avatar{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 5px #fff;
+        overflow: hidden;
+        display: flex;
+    }
+    &__content{
+        background-color: #fff;
+        height: 100%;
+        padding-top: 75px;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 12px;
+        justify-content: center;
+    }
+    &__name{
+        font-size: 18px;
+        color: var(--accent-gray);
+        margin-right: 7px;
+    }
+    &__age{
+        font-size: 18px;
+    }
+    &__residence{
+        padding-bottom: 28px;
+        font-size: 14px;
+        border-bottom: solid 1px #ccc;
+    }
+    &__info{
+        padding-top: 28px;
+    }
+
+}
+
+.col{
+    &__number {
+        color: var(--accent-gray);
+        font-weight: 700;
+    }
+    &__text{
+        margin-top: 7px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+}

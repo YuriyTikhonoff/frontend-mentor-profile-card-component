@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --accent-gray:hsla(0, 0%, 15%, 0.950);
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  color: var(--dark-gray);
+}
+
+.main {
+  background-image: url(../images/bg-pattern-top.svg);
+  background-color: var(--dark-cyan);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  margin: 26px;
+  width: 348px;
+  height: 378px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__body {
+  height: 100%;
+}
+
+.card__top {
+  height: 140px;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+
+.card__avatar {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 5px #fff;
+          box-shadow: 0px 0px 0px 5px #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__content {
+  background-color: #fff;
+  height: 100%;
+  padding-top: 75px;
+  text-align: center;
+}
+
+.card__title {
+  margin-bottom: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__name {
+  font-size: 18px;
+  color: var(--accent-gray);
+  margin-right: 7px;
+}
+
+.card__age {
+  font-size: 18px;
+}
+
+.card__residence {
+  padding-bottom: 28px;
+  font-size: 14px;
+  border-bottom: solid 1px #ccc;
+}
+
+.card__info {
+  padding-top: 28px;
+}
+
+.col__number {
+  color: var(--accent-gray);
+  font-weight: 700;
+}
+
+.col__text {
+  margin-top: 7px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+/*# sourceMappingURL=main.css.map */
