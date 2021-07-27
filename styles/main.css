@@ -109,7 +109,7 @@ body {
 }
 
 .card__info {
-  padding-top: 28px;
+  padding: 25px 5px 0px;
 }
 
 .col__number {
